@@ -5,7 +5,7 @@
 }
 body {
     margin: 0;
-    font-family: montserrat, sans-serif;
+    font-family: "montserrat", sans-serif;
     background-image: linear-gradient( black, rgb(192, 57, 192), black);
     color: white;
 }
@@ -38,14 +38,13 @@ a {
     margin: 80px 7px;
 }
 
-.sobreMim a {
+.sobreMim .link {
     transition: 0.4s;
 }
 
-.sobreMim a:hover {
+.sobreMim .link:hover {
     transform: scale(1.25);
-    margin-left: 100px;
-
+    margin: 10px 0 0 100px;
 }
 
 .inicio {
@@ -58,7 +57,7 @@ a {
 }
 
 .inicio img {
-    border-radius: 20%;
+    border-radius: 8%;
     width: 300px;
     margin: 0 0 0 15px;
     transition: 0.5s;
@@ -69,9 +68,7 @@ a {
     transform: scale(1.2);
     margin: 0 0 0 50px;
     border: 3px solid orange;
-
 }
-
 
 h3 {
     font-size: larger;
@@ -107,7 +104,6 @@ iframe:hover {
     transform: scale(1.05);
     margin: 20px 0 0 20px;
     border: 3px solid orange;
-    box-sizing: content-box;
     transition: 0.5s;
 }
 
