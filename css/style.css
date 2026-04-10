@@ -38,6 +38,16 @@ a {
     margin: 80px 7px;
 }
 
+.sobreMim a {
+    transition: 0.4s;
+}
+
+.sobreMim a:hover {
+    transform: scale(1.25);
+    margin-left: 100px;
+
+}
+
 .inicio {
     display: flex;
     align-items: center;
@@ -79,6 +89,13 @@ h4 {
     margin: 0;
 }
 
+h3 {
+    transition: 0.4s;
+}
+h3:hover {
+    font-size: 25px;
+}
+
 iframe {
     background-color: white;
     border-radius: 10px;
@@ -92,4 +109,13 @@ iframe:hover {
     border: 3px solid orange;
     box-sizing: content-box;
     transition: 0.5s;
+}
+
+.contatos .item {
+    transition: 0.4s;
+}
+
+.contatos .item:hover {
+    transform: scale(1.2);
+    padding: 0 20px 0 20px;
 }
