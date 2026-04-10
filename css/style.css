@@ -38,15 +38,6 @@ a {
     margin: 80px 7px;
 }
 
-.sobreMim .link {
-    transition: 0.4s;
-}
-
-.sobreMim .link:hover {
-    transform: scale(1.25);
-    margin: 5%;
-}
-
 .inicio {
     display: flex;
     align-items: center;
