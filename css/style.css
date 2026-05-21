@@ -116,3 +116,11 @@ table, th, td {
     padding: 7px;
     border: 1px solid white;
 }
+
+.atividades {
+    display: inline-block;
+    margin-left: 20px;
+    background-color: rgb(107, 1, 107);
+    border-radius: 10px;
+    padding: 20px;
+}
