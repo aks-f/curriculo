@@ -6,7 +6,7 @@
 body {
     margin: 0;
     font-family: "montserrat", sans-serif;
-    background-image: linear-gradient( black, rgb(192, 57, 192), black);
+    background-color: black;
     color: white;
 }
 
@@ -93,7 +93,7 @@ iframe {
 
 iframe:hover {
     transform: scale(1.05);
-    margin: 20px 0 0 20px;
+    margin: 20px 0 20px 20px;
     border: 3px solid orange;
     transition: 0.5s;
 }
@@ -105,4 +105,14 @@ iframe:hover {
 .contatos .item:hover {
     transform: scale(1.2);
     padding: 0 20px 0 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 7px;
+    border: 1px solid white;
 }
