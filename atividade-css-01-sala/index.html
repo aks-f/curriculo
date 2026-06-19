@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade css01 sala</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img id="barra-texto" src="../assets/images/barra.png" alt="">
+        <h1>São João em Pilar</h1>
+        <p>Formulário de inscrição no evento de São João de Pilar</p>
+    </header>
+    <img id="bandeirinhas" src="../assets/images/bandeirinhas.png" alt="Bandeirinhas de São João">
+
+    <main>
+        <h2>Formulário de inscrição</h2>
+            <p><span class="obrigatorio">*</span> representa informações obrigatórias</p>
+            
+        <form>
+            <div class="campo">
+            <label for="nome"><span class="obrigatorio">*</span>Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="campo">
+            <label for="email"><span class="obrigatorio">*</span>Email</label>
+            <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="nascimento"><span class="obrigatorio">*</span>Data de nascimento</label>
+                <input type="date" id="nascimento" required>
+            </div>
+
+            <div class="campo">
+                <fieldset>
+                    <legend><span class="obrigatorio">*</span>Turno que vai</legend>
+
+                    <label><input type="radio" name="turno" value="manha" required> Manhã</label>
+                    <label><input type="radio" name="turno" value="tarde"> Tarde</label>
+                    <label><input type="radio" name="turno" value="noite"> Noite</label>
+                </fieldset>
+            </div>
+
+            <div class="campo">
+                <label for="comida">Comida tipica favorita</label>
+                <input type="select" id="comida" list="comidas">
+                <datalist id="comidas">
+                    <option value="Paçoca">
+                    <option value="Milho">
+                    <option value="Bolo de milho">
+                    <option value="Canjica">
+                    <option value="Pamonha">
+                    <option value="Pipoca">
+                    <option value="Arroz doce">
+                </datalist>
+            </div>
+
+            <div class="campo">
+                <fieldset>
+                    <legend>Danças que gosta</legend>
+                    <label class="checkbox"><input type="checkbox" name="dancas" value="Capoeira">Capoeira</label>
+                    <label class="checkbox"><input type="checkbox" name="dancas" value="Forró">Forró</label>
+                    <label class="checkbox"><input type="checkbox" name="dancas" value="Quadrilha">Quadrilha</label>
+                    <label class="checkbox"><input type="checkbox" name="dancas" value="Xote">Xote</label>
+                    <label class="checkbox"><input type="checkbox" name="dancas" value="Xaxado">Xaxado</label>
+                </fieldset>
+            </div>
+
+            <div class="campo">
+                <input type="submit" name="submit-btn" id="submit-btn">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>Pilar - AL | Prefeitura Municipal | eventos@pilar.al.gov.br</p>
+        <p>Integrantes: Aksson Costa e Elldy Matheus<br>
+            Data: 19/06/2026<br>
+            Programação Web</p>
+    </footer>
+
+    <p><a href="../index.html">← Voltar para a página principal</a></p>
+</body>
+</html>
