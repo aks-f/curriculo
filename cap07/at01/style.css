@@ -1,0 +1,236 @@
+/* =====================================================================
+   atv01.css  —  ARQUIVO DE TRABALHO DA ATIVIDADE
+   ---------------------------------------------------------------------
+
+   Reflexão escrita do bloco 1:
+   O "rem" é relativo a fonte do elemento raiz (html), ideal para fontes manterem a proporção no zoom
+   O "em" é relativo a fonte do elemento pai, ideal para paddings e margins escalarem com o texto
+   O "%", "vw" e "vh" dependem do tamanho do elemento pai ou da janela, ideal para layouts flexiveis que respondem ao redimensionamento da tela
+*/
+/* ---------- Base ---------- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: #333333;
+  background-color: #f5f5f5;
+}
+
+/* ---------- Cabeçalho ---------- */
+.cabecalho {
+  background-color: #1565c0;
+  padding: 2rem;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.subtitulo {
+  color: #bbdefb;
+  font-size: 1rem;
+}
+
+/* ---------- Menu de navegação ---------- */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+/*Reflexão escrita do bloco 2:
+O seletor descendente (.menu a) busca qualquer âncora dentro de .menu,
+já o seletor descendente de filho direto, seleciona apenas as âncoras que estão ligadas diretamente ao elemento,
+ignorando os descendentes seguintes*/
+
+.menu a {
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.menu a::before {
+    content: "> ";
+}
+
+.menu a:hover {
+    color: #bbdefb;
+    text-decoration: underline;
+}
+
+/* ---------- Seções ---------- */
+.secao {
+  padding: 2rem;
+  max-width: 60rem;
+  width: 100%;
+}
+
+h2 {
+  color: #1565c0;
+  font-size: 1.5rem;
+}
+
+h2 + p {
+    margin-top: 1.5rem;
+}
+
+h3 {
+  color: #0d47a1;
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.destaque {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #b71c1c;
+}
+
+.destaque ~ p {
+    font-style: italic;
+    color: brown;
+}
+
+/* ---------- Grade de trilhas ---------- */
+.cartao {
+  display: inline-block;
+  width: 100%;
+  max-width: 17.5rem;
+  vertical-align: top;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  padding: 1em;
+  margin: 0.5em;
+}
+
+.cartao:not(:last-child) {
+    margin-bottom: 2em;
+}
+
+/*Reflexão escrita do bloco 3:
+O nth-child() permite estilizar elementos sem adicionar classes à marcação porque ele
+seleciona os elementos de acordo com sua posição númerica em relação aos outros elementos*/
+.cartao:nth-child(odd) {
+    background-color: black;
+    color: white;
+}
+
+.cartao:nth-child(even) {
+    background-color:#cccccc;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #1565c0;
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+}
+
+/*Bloco 4: especificidade
+o "background-color" está conflitando entre o ."botao" e ".cartao .botao", porém,
+o ".cartao .botao" prevalecerá por ser mais especifico*/
+.cartao .botao {
+    background-color: rgb(216, 107, 125);
+}
+
+.botao:hover {
+    background-color: #bbdefb;
+    color: black;
+}
+
+/* ---------- Lista de programação ---------- */
+.lista-dias {
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+.lista-dias > li {
+    font-weight: bold;
+}
+
+.lista-dias > li li {
+    font-weight: normal;
+}
+
+.lista-dias > li:first-child {
+    max-width: 25rem;
+    border: 4px solid #bbdefb;
+}
+
+.lista-dias > li:last-child {
+    max-width: 25rem;
+    border: 4px solid #1565c0;
+}
+
+/* ---------- Formulário ---------- */
+.formulario {
+  max-width: 30rem;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+label::after {
+    content: "*";
+    color: red;
+}
+
+input, textarea {
+  display: block;
+  max-width: 20rem;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #999999;
+}
+
+input:focus, textarea:focus {
+    background-color: #bbdefb;
+}
+
+input[type="email"] {
+    border: 2px solid #1565c0;
+}
+
+input[type="password"] {
+    border: 2px dashed #1565c0;
+}
+
+button {
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #1565c0;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+  border: 0;
+  cursor: pointer;
+}
+
+/* ---------- Rodapé ---------- */
+.rodape {
+  background-color: #263238;
+  color: #cfd8dc;
+  padding: 1.5rem;
+  font-size: 0.875rem;
+}
