@@ -5,7 +5,7 @@
    Reflexão escrita do bloco 1:
    O "rem" é relativo a fonte do elemento raiz (html), ideal para fontes manterem a proporção no zoom
    O "em" é relativo a fonte do elemento pai, ideal para paddings e margins escalarem com o texto
-   O "%", "vw" e "vh" dependem do tamanho do elemento pai ou da janela, ideal para layouts flexiveis que respondem ao redimensionamento da tela
+   O "%", "vw" e "vh" dependem do tamanho da janela, ideal para layouts que respondem ao redimensionamento da tela
 */
 /* ---------- Base ---------- */
 body {
