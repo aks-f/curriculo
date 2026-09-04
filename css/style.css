@@ -124,7 +124,6 @@ table, th, td {
     margin: 2rem;
 }
 
-/* Cada bloco de capítulo/categoria */
 .card-atividade {
     background-color: rgb(141, 16, 141);
     padding: 1.5rem;
@@ -132,7 +131,6 @@ table, th, td {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Lista interna de links de cada card */
 .card-atividade > nav > ul {
     list-style: none;
     padding: 0;
