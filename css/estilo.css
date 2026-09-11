@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Oooh+Baby&display=swap');
+
 :root {
   --cor: #0D9488;
   --cor2: #D96B43;
@@ -11,10 +13,14 @@
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: "Courier Prime", sans-serif;
   color: var(--texto);
   background: var(--fundo);
   line-height: 1.6;
+}
+
+.fonte-secundaria {
+  font-family: "Oooh Baby", sans-serif;
 }
 
 /* ============================================================
