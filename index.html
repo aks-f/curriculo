@@ -1,142 +1,97 @@
-<DOCTYPE html>
-    <html lang="pt-BR">
-        <head>
-            <meta charset="UTF-8">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-            <link rel="stylesheet" href="css/style.css">
-            <title>Currículo - Aksson Costa</title>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Pessoal — Aksson Costa</title>
+    <link rel="stylesheet" href="/css/estilo.css" />
+  </head>
 
-            <style>
-             body {
-                background-image: linear-gradient( black, rgb(192, 57, 192), black);
-             }
-            </style>
-        </head>
-        <body>
-            <header>
-                    <h1>Olá, sou Aksson Costa Cavalcante</h1>
-                    <h2><i class="fa-solid fa-laptop-code"></i>1° ano Ensino médio técnico | Desenvolvimento de Sistemas | IFAL</h2>
-                <nav>
-                    <div class="contatos">
-                        <p class="item"><i class="fa-solid fa-phone"></i> +55 82 9415-4311</p>
-                        <p class="item"><i class="fa-solid fa-envelope"></i> acc7@aluno.ifal.edu.br</p>
-                        <a class="item" href="https://github.com/aks-f" target="_blank"><i class="fa-brands fa-github"></i> Meu GitHub</a>
-                </div>
-                </nav>
-            </header>
-            <main>
-                <div class="inicio">
-                    <img src="assets/images/aksson3x4.jpeg" alt="Foto do Aksson" width="250px">
+  <body>
+    <div class="pagina">
+      <header class="cabecalho">
+        <h1>Aksson Costa</h1>
+        <p>Sou um iniciante em <strong>desenvolvimento web</strong></p>
+        <nav>
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </header>
 
-                    <p id="texto-foto">Sou um iniciante em <strong>desenvolvimento web</strong>.</p>
-                </div>
+      <!-- ====== CONTEÚDO PRINCIPAL ====== -->
+      <main class="principal">
+        <section id="sobre" class="cartao">
+          <h2>Sobre mim</h2>
+          <p>
+            Estou começando no curso de Desenvolvimento de Sistemas no IFAL,
+            gosto dessa área há anos, e com essa oportunidade busco ampliar cada
+            vez mais meu conhecimento sobre, e futuramente desejo seguir nessa
+            carreira. Em meu tempo livre gosto de assistir séries, jogar alguns
+            jogos de computador e criar pequenos projetos envolvendo
+            programação.
+          </p>
+        </section>
 
-                <section class="sobreMim">
-                    <p>Estou realizando o curso de Desenvolvimento de Sistemas no IFAL campus Maceió, no qual é tratado temas como desenvolvimento web, banco de dados e outros conhecimentos sobre informática.</p>
-                    <a href="https://www2.ifal.edu.br/campus/maceio/ensino/cursos/tecnicos-integrados/desenvolvimento-de-sistemas" target="_blank">Ver mais sobre o curso</a><br>
-                    <h3><i class="fa-solid fa-cake"></i> Data de nascimento: 21/01/2011</h3>
-                    <p>Sou um iniciante em desenvolvimento web.<br>
-                    Estou começando no curso de Desenvolvimento de Sistemas no IFAL, gosto dessa área há anos, e com essa oportunidade busco ampliar cada vez mais meu conhecimento sobre, e futuramente desejo seguir nessa carreira.<br>
-                    Em meu tempo livre gosto de assistir séries, jogar alguns jogos de computador e criar pequenos projetos envolvendo programação.</p><br>
-                    
-                    <h3><i class="fa-solid fa-bullseye"></i> Objetivo</h3>
-                    <p>Me tornar um desenvolvedor profissional, contribuindo para projetos significativos e continuando meu aprendizado em tecnologia.</p>
+        <section id="projetos" class="cartao">
+          <h2>Projetos</h2>
+          <div class="projetos">
+            <article class="projeto">
+              <h3>Asini</h3>
+              <p>Uma página simples de uma pizzaria.</p>
+              <a href="https://aks-f.github.io/Asini/" target="_blank"
+                >Ver projeto</a
+              >
+            </article>
+            <article class="projeto">
+              <h3>Mercado</h3>
+              <p>Um mercado com banco de dados (em desenvolvimento)</p>
+              <a href="https://mercado-em-js.onrender.com" target="_blank"
+                >Ver projeto</a
+              >
+            </article>
+          </div>
+        </section>
+      </main>
 
-                    <h3 class="items"><i class="fa-solid fa-award"></i> Formação Acadêmica</h3>
-                    <p>Ensino médio técnico em informática - IFAL (2026 - Atualmente)</p>
-                    <ul>
-                        <li>Programação web</li>
-                        <li>Introdução a programação</li>
-                        <li>Fundamentos da informática</li>
-                    </ul>
+      <!-- ====== BARRA LATERAL ====== -->
+      <aside class="lateral">
+        <section class="cartao">
+          <h2>Habilidades</h2>
+          <ul class="habilidades">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Grid</li>
+            <li>Flexbox</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>C#</li>
+          </ul>
+        </section>
 
-                    <h3 class="items"><i class="fa-solid fa-lightbulb"></i> Habilidades</h3>
-                    <ul>
-                        <li>HTML (intermediário)</li>
-                        <li>CSS (básico)</li>
-                        <li>JavaScript (básico)</li>
-                        <li>C# (básico)</li>
-                        <li>Python (básico)</li>
-                    </ul>
+        <section id="contato" class="cartao">
+          <h2>Contato</h2>
+          <ul class="contato">
+            <li>
+              ✉️
+              <a href="mailto:acc7@aluno.ifal.edu.br" target="_blank"
+                >acc7@aluno.ifal.edu.br</a
+              >
+            </li>
+            <li>
+              🐙
+              <a href="https://github.com/aks-f" target="_blank"
+                >github.com/aks-f</a
+              >
+            </li>
+          </ul>
+        </section>
+      </aside>
 
-                    <h3 class="items"><i class="fa-solid fa-laptop"></i> Projetos Pessoais</h3>
-                    
-                    <div class="item-projetos-pessoais">
-                    <h4 class="item">Asini</h4>
-                    <p class="item">Um site que serviu como um teste básico sobre uma pizzaria</p>
-                    <a href="https://aks-f.github.io/Asini/" target="_blank">Ir para o site</a><br>
-                    <iframe src="https://aks-f.github.io/Asini/" width="600px" height="500px"></iframe>
-                    </div>
-                    <div class="item-projetos-pessoais">
-                    <h4 class="item">mercado em js</h4>
-                    <p class="item">Um projeto de mercado desenvolvido utilizando html, css e javascript<br><b>(em desenvolvimento)</b></p>
-                    <a href="https://mercado-em-js.onrender.com" target="_blank">Ir para o site</a><br>
-                    <iframe src="https://mercado-em-js.onrender.com" width="600px" height="500px"></iframe>
-                    </div>
-                </section>
-        </main>
-
-    <section class="atividades">
-        <div class="card-atividade">
-            <nav aria-label="Atividades do Capítulo 4">
-                <h2>Capítulo 4 — Tabelas, Listas e Mídia</h2>
-                <ul>
-                    <li>
-                    <a href="cap04/at01-tabela-basica.html">
-                        Atividade 1 — Tabela Básica
-                    </a>
-                    </li>
-                    <li>
-                    <a href="cap04/at02-tabela-semantica.html">
-                        Atividade 2 — Tabela Semântica com Mesclagem
-                    </a>
-                    </li>
-                    <li>
-                    <a href="cap04/at03-listas-avancadas.html">
-                        Atividade 3 — Listas Avançadas e Glossário
-                    </a>
-                    </li>
-                    <li>
-                    <a href="cap04/at04-multimidia.html">
-                        Atividade 4 — Página Multimídia
-                    </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="card-atividade">
-            <nav aria-label="Atividades do Capítulo 4"></nav>
-            <h2>Capítulo 5 — Formulários HTML</h2>
-            <nav>
-                <ul>
-                    <li><a href="cap05/at01.html">AT01 — Formulário de Contato</a></li>
-                    <li><a href="cap05/at02.html">AT02 — Cadastro de Usuário</a></li>
-                    <li><a href="cap05/at03.html">AT03 — Matrícula Acadêmica</a></li>
-                    <li><a href="cap05/at04.html">AT04 — Inscrição em Evento</a></li>
-                    <li><a href="cap05/at05.html">AT05 — Pesquisa Acadêmica</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="card-atividade">
-            <nav aria-label="Formulário"></nav>
-            <h2>CSS</h2>
-            <nav>
-                <ul>
-                    <li><a href="atividade-css-01-sala/index.html">AT01  —  CSS</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="card-atividade">
-            <h2>Capítulo 7</h2>
-            <nav aria-label="Atividades do Capítulo 7">
-                <ul>
-                    <li><a href="cap07/at01/index.html">AT01</a></li>
-                </ul>
-            </nav>
-        </div>
-    </section>
-        </body>
-    </html>
+      <!-- ====== RODAPÉ  ====== -->
+      <footer class="rodape">
+        © 2026 Aksson Costa Cavalcante · feito com HTML + CSS Grid
+      </footer>
+    </div>
+  </body>
+</html>
